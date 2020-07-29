@@ -11,6 +11,8 @@ async function run(): Promise<void> {
     core.debug(new Date().toTimeString())
 
     core.setOutput('time', new Date().toTimeString())
+
+    console.log("done!");
   } catch (error) {
     core.setFailed(error.message)
   }

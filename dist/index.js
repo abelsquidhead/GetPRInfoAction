@@ -101,6 +101,7 @@ function run() {
             yield wait_1.wait(parseInt(ms, 10));
             core.debug(new Date().toTimeString());
             core.setOutput('time', new Date().toTimeString());
+            console.log("done!");
         }
         catch (error) {
             core.setFailed(error.message);

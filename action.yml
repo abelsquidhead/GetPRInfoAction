@@ -1,11 +1,16 @@
-name: 'Your name here'
-description: 'Provide a description here'
-author: 'Your name or organization here'
+name: 'Get PR Name Action'
+description: 'This action saves the pull request url, name and number as environment variables as well as output parameters'
+author: 'abelsquidhead'
 inputs:
-  milliseconds: # change this
-    required: true
-    description: 'input description here'
-    default: 'default value if applicable'
+  githubToken:              # change this
+    description: 'GitHub Token'
+outputs:
+  url:
+    description: 'URL to the pull request'
+  title:
+    description: 'Title to the pull request'
+  number:
+    description: 'Pull request number'
 runs:
   using: 'node12'
   main: 'dist/index.js'

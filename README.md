@@ -56,4 +56,4 @@ jobs:
           echo 'PR Number is: ' ${{ steps.getPRValuesStep.outputs.number}}
           echo 'PR Title is: ' ${PR_TITLE}
 ```
-The above example shows how to reference the output via the output variables and also how to use the environment variables in later steps. The GetPRInfoAction also requres your GitHub token to access the PR info. You can access your GitHub token from the workflow ith ${{ secrets.GITHUB_TOKEN }}
+The above example shows how to reference the output via the output variables and also how to reference the output using the environment variables in later steps. The GetPRInfoAction also requres your GitHub token to access the PR info. You can access your GitHub token from the workflow ith ${{ secrets.GITHUB_TOKEN }}
